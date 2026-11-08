@@ -1,8 +1,8 @@
 # OSYS3030 - Linux Network Appliance Documentation
 
-> **Student Name:** [Your Name]  
-> **Student ID / VMID:** [e.g., 106]  
-> **Repository:** [Public GitHub URL]  
+> **Student Name:** Jace  
+> **Student ID / VMID:** w0444779 / 104
+> **Repository:** https://github.com/Jace-Bernard/osys3030-network-services-template  
 > **Instructor:** Matt Redmond  
 > **Course:** OSYS3030 - Network Services Using Linux  
 
