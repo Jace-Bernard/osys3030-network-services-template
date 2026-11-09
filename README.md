@@ -95,5 +95,5 @@ See [`AI_AUDIT.md`](./AI_AUDIT.md) for documentation on how these scripts were g
 ## 6. Peer Review Audit
 
 * **Audited Classmate:** Milkmaq (My own Alt account) (https://github.com/Milkmaq/osys3030-network-services-template/blob/main/README.md)
-* **Classmate Appliance Subnet:** `10.<PartnerID>.0.0/24`
-* **Audit Summary:** [2–3 sentences summarizing your review of your peer's repository, configs, and recovery documentation].
+* **Classmate Appliance Subnet:** `10.20.0.153/23`
+* **Audit Summary:** He did a God awful Job at working on the documentation and has only made changes in the main README.md file.
