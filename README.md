@@ -98,4 +98,4 @@ See [`AI_AUDIT.md`](./AI_AUDIT.md) for documentation on how these scripts were g
 
 * **Audited Classmate:** Milkmaq (My own Alt account) (https://github.com/Milkmaq/osys3030-network-services-template/blob/main/README.md)
 * **Classmate Appliance Subnet:** `10.20.0.153/23`
-* **Audit Summary:** He did a God awful Job at working on the documentation and has only made changes in the main README.md file.
+* **Audit Summary:** He did a God awful Job (Its a Joke since its my own account) at working on the documentation and has only made changes in the main README.md file.
