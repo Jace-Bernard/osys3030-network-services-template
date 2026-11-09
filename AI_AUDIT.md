@@ -1,7 +1,9 @@
 # AI Automation & Code Audit Log
 
 > **Student Name:** Jace-Bernard
+> 
 > **Student ID:** w0444779
+> 
 > **AI Tool Used:** Gemini 3.1 Pro
 
 ---
