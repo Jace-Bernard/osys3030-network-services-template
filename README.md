@@ -36,11 +36,11 @@ A high-level summary of your multi-homed Linux server appliance, its purpose, an
                        |      (Your Appliance)   |
                        +------------+------------+
                                  [ens19]
-                                    | (10.<ID>.0.250/24)
+                                    | (10.104.0.250/24)
                                     |
               +---------------------+--------------------+
               |        Isolated Private VLAN (vmbr5)      |
-              |             10.<ID>.0.0/24               |
+              |             10.20.0.153/23                |
               +---------------------+--------------------+
                                     |
                                     | (DHCP: 10.<ID>.0.10 - .200)
