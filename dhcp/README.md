@@ -31,7 +31,7 @@ sudo systemctl enable kea-dhcp4-server
 ```
 
 ## 5. Client Verification & Alpine Linux Notes
-On your **Alpine Linux Client VM** (`OSYS3030-Jace-Bernard-client` / VM `91 104`):
+On your **Alpine Linux Client VM** (`OSYS3030-jace.bernard-client` / VM `91 104`):
 
 > [!NOTE]
 > Alpine Linux uses BusyBox `udhcpc`. BusyBox requires `eth0` to be administratively `UP` before broadcasting!
