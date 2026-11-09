@@ -26,7 +26,7 @@ Add the `*nat` table block before the `*filter` block:
 :POSTROUTING ACCEPT [0:0]
 
 # Forward traffic from LAN (ens19) out WAN (ens18)
--A POSTROUTING -s 10.<YourID>.0.0/24 -o ens18 -j MASQUERADE
+-A POSTROUTING -s 10.104.0.0/24 -o ens18 -j MASQUERADE
 
 # Commit the NAT rules
 COMMIT
@@ -51,7 +51,7 @@ sudo ufw enable
 ## 6. Verification & Troubleshooting
 * Check firewall status: `sudo ufw status verbose`
 * Check active NAT masquerading rules: `sudo iptables -t nat -L -v -n`
-* From Alpine Client VM (`91<ID>`):
+* From Alpine Client VM (`91 104`):
   ```bash
   # Must succeed if NAT is functional:
   ping -c 3 8.8.8.8

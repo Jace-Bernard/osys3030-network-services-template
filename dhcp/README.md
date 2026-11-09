@@ -8,10 +8,10 @@ Document your modern ISC Kea DHCPv4 configuration. Kea allocates dynamic IPv4 ad
 
 ## 3. Scope & Option Architecture
 * **Listening Interface:** `ens19` (bound exclusively to LAN).
-* **Subnet:** `10.<YourID>.0.0/24`
-* **Dynamic Pool:** `10.<YourID>.0.10 - 10.<YourID>.0.200`
-* **Default Router (Option 3):** `10.<YourID>.0.250` (Server `ens19` IP)
-* **Domain Name Server (Option 6):** `10.<YourID>.0.250` (Internal BIND9 IP)
+* **Subnet:** `10.104.0.0/24`
+* **Dynamic Pool:** `10.104.0.10 - 10.104.0.200`
+* **Default Router (Option 3):** `10.104.0.250` (Server `ens19` IP)
+* **Domain Name Server (Option 6):** `10.104.0.250` (Internal BIND9 IP)
 
 ## 4. Recovery & Deployment Steps
 ```bash
@@ -31,7 +31,7 @@ sudo systemctl enable kea-dhcp4-server
 ```
 
 ## 5. Client Verification & Alpine Linux Notes
-On your **Alpine Linux Client VM** (`OSYS3030-<username>-client` / VM `91<ID>`):
+On your **Alpine Linux Client VM** (`OSYS3030-jace.bernard-client` / VM `91 104`):
 
 > [!NOTE]
 > Alpine Linux uses BusyBox `udhcpc`. BusyBox requires `eth0` to be administratively `UP` before broadcasting!

@@ -12,7 +12,7 @@
 A high-level summary of your multi-homed Linux server appliance, its purpose, and its role as a gateway/router for the private internal network.
 
 * **Operating System:** Ubuntu Server 24.04 LTS (Noble Numbat)
-* **Hostname:** `server-[YourID]` (e.g., `robserver`)
+* **Hostname:** `server-104` 
 * **Primary Roles:**
   * Router & Firewall (UFW + iptables NAT masquerading)
   * Recursive & Authoritative DNS (BIND9)
@@ -26,35 +26,35 @@ A high-level summary of your multi-homed Linux server appliance, its purpose, an
 ```text
               +------------------------------------------+
               |           WAN / NSCC Network             |
-              |             10.20.0.0/23                 |
+              |             10.20.0.153/24               |
               +---------------------+--------------------+
                                     |
                                     | (DHCP / Static IP)
-                                 [ens18]
+                                 [ens18] (10.20.0.153/23)
                        +------------+------------+
                        |   OSYS3030 Linux Server |
                        |      (Your Appliance)   |
                        +------------+------------+
                                  [ens19]
-                                    | (10.<ID>.0.250/24)
+                                    | (10.104.0.250/24)
                                     |
               +---------------------+--------------------+
               |        Isolated Private VLAN (vmbr5)      |
-              |             10.<ID>.0.0/24               |
+              |             10.104.0.0/24                 |
               +---------------------+--------------------+
                                     |
-                                    | (DHCP: 10.<ID>.0.10 - .200)
+                                    | (DHCP: 10.104.0.10 - .200)
                                  [eth0]
                        +------------+------------+
                        |    Alpine Client VM     |
-                       |       (VM 91<ID>)       |
+                       |       (VM 91 104)       |
                        +-------------------------+
 ```
 
 | Interface | Network Zone | IP Address / Subnet | Purpose |
 | :--- | :--- | :--- | :--- |
-| `ens18` | WAN / External | `10.20.1.<ID>/23` | Upstream internet & SSH management |
-| `ens19` | LAN / Internal | `10.<ID>.0.250/24` | Default gateway & service binding for clients |
+| `ens18` | WAN / External | `10.20.0.153>/23` | Upstream internet & SSH management |
+| `ens19` | LAN / Internal | `10.104.0.250/24` | Default gateway & service binding for clients |
 
 ---
 
@@ -72,6 +72,8 @@ A high-level summary of your multi-homed Linux server appliance, its purpose, an
 
 ## 4. Base OS & Netplan Prerequisites
 Document any one-time operating system setup steps, package manager configurations, and your `/etc/netplan/*.yaml` static interface definitions required before services can be installed.
+
+The base operating system is pre-configured with a static Netplan layout. The `/etc/netplan/50-cloud-init.yaml` or relevant netplan config assigns `10.104.0.250/24` to `ens19` with standard multi-homing rules.
 
 ---
 
@@ -94,6 +96,6 @@ See [`AI_AUDIT.md`](./AI_AUDIT.md) for documentation on how these scripts were g
 
 ## 6. Peer Review Audit
 
-* **Audited Classmate:** [Classmate Name] ([GitHub Profile URL / Repo URL])
-* **Classmate Appliance Subnet:** `10.<PartnerID>.0.0/24`
-* **Audit Summary:** [2–3 sentences summarizing your review of your peer's repository, configs, and recovery documentation].
+* **Audited Classmate:** Milkmaq (My own Alt account) (https://github.com/Milkmaq/osys3030-network-services-template/blob/main/README.md)
+* **Classmate Appliance Subnet:** `10.20.0.153/23`
+* **Audit Summary:** He did a God awful Job at working on the documentation and has only made changes in the main README.md file.
