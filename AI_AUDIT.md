@@ -1,13 +1,13 @@
 # AI Automation & Code Audit Log
 
-> **Student Name:** [Your Name]  
-> **Student ID:** [Your ID]  
-> **AI Tool Used:** [e.g., ChatGPT 4o / Claude 3.5 Sonnet / Gemini 1.5 Pro]  
+> **Student Name:** Jace-Bernard
+> **Student ID:** w0444779
+> **AI Tool Used:** Gemini 3.1 Pro
 
 ---
 
 ## 1. Executive Summary
-Briefly explain how you used AI as an engineering tool to translate your Markdown documentation into executable Bash scripts (`deploy_appliance.sh` and `verify_appliance.sh`).
+I used Gemini 3.1 PRo to assistant with translating my configuration vault and Markdown guides into Bash deployment and verification scripts. I provided the AI with my config files and assignment prompts to generate the initial drafts, which I then audited and corrected for my specific environment VM ID-104.
 
 ---
 
