@@ -55,23 +55,41 @@ AI models frequently introduce errors when writing infrastructure automation. Do
 ==========================================================
   OSYS3030 Appliance Health & Verification Suite
 ==========================================================
+
 --- 1. BIND9 DNS Service ---
+
   BIND9 service is active                                      [ PASS ]
+  
   BIND9 configuration syntax                                   [ PASS ]
+  
   DNS listening on UDP port 53                                 [ PASS ]
+  
   Local DNS resolution for innovate.lab                        [ PASS ]
+  
 --- 2. Kea DHCPv4 Service ---
+
   Kea DHCPv4 service is active                                 [ PASS ]
+  
   Kea configuration syntax                                     [ PASS ]
+  
   DHCP listening on UDP port 67                                [ PASS ]
+  
 --- 3. Host Hardening & SSH ---
+
   OpenSSH service is active                                    [ PASS ]
+  
   SSH listening on TCP port 22                                 [ PASS ]
+  
 --- 4. Firewall & Routing ---
+
   UFW firewall is active                                       [ PASS ]
+  
   IPv4 packet forwarding enabled                               [ PASS ]
+  
   iptables NAT MASQUERADE rule present                         [ PASS ]
+  
 ==========================================================
+
   All appliance health checks passed successfully!
 
   ```
