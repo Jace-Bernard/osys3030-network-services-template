@@ -1,0 +1,15 @@
+$TTL 604800
+@   IN  SOA ns1.innovate.lab. admin.innovate.lab. (
+        2026103104
+        604800
+        86400
+        2419200
+        604800 )
+
+@       IN  NS      ns1.innovate.lab.
+@       IN  A       10.104.0.250
+
+ns1     IN  A       10.104.0.250
+web     IN  A       10.104.0.250
+app     IN  A       10.104.0.250
+
